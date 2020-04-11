@@ -21,11 +21,11 @@
             <% if user_signed_in? %>
 
             <li>
-              <%= link_to(content_tag(:span, "  Home", class: "glyphicon glyphicon-home home"), "/") %>
+              <%= link_to(content_tag(:span, "  Home", class: "glyphicon glyphicon-home home"), user_path(current_user.id) ) %>
             </li>
 
             <li>
-              <%= link_to(content_tag(:span, "  Users", class: "glyphicon glyphicon-user users"), "#") %>
+              <%= link_to(content_tag(:span, "  Users", class: "glyphicon glyphicon-user users"), users_path) %>
             </li>
 
             <li>
@@ -43,7 +43,6 @@
             </li>
 
             <li>
-              <span class=""></span>
                <%= link_to(content_tag(:span, "  About", class: "glyphicon glyphicon-link about"), home_about_path) %>
             </li>
 
