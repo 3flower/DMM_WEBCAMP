@@ -1,4 +1,7 @@
-<div class="container">
+
+  <% if flash[:notice] %>
+    <p class="green"><%= flash[:notice] %></p>
+  <% end %>
   <div class="row">
   	<%= render "books/user_bookNew", book: @book, user: @user %>
 
@@ -39,4 +42,3 @@
      	</table>
   	</div>
   </div>
-</div>

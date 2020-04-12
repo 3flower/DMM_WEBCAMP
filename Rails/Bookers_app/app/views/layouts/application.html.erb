@@ -33,7 +33,7 @@
             </li>
 
             <li>
-              <%= link_to(content_tag(:span, "  lgout", class: "glyphicon glyphicon-log-out logout"), destroy_user_session_path, method: :delete) %>
+              <%= link_to(content_tag(:span, "  logout", class: "glyphicon glyphicon-log-out logout"), destroy_user_session_path, method: :delete) %>
             </li>
 
             <% else %>
@@ -47,7 +47,7 @@
             </li>
 
             <li>
-              <%= link_to(content_tag(:span, "  sing up", class: "glyphicon glyphicon-edit sign_up"), new_user_registration_path) %>
+              <%= link_to(content_tag(:span, "  sign up", class: "glyphicon glyphicon-edit sign_up"), new_user_registration_path) %>
             </li>
 
             <li>
@@ -60,7 +60,7 @@
       </div>
     </header>
 
-    <div class="body">
+    <div class="body container">
       <%= yield %>
     </div>
 

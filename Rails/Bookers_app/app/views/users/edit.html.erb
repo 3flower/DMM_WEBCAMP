@@ -1,5 +1,8 @@
-<div class="container">
+
 <h2>User info</h2>
+<div class="error_messages">
+  <%= render "devise/shared/error_messages", resource: @user %>
+</div>
 
 <%= form_for(@user) do |f| %>
   <div class="field">
